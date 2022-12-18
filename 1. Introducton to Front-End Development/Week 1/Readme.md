@@ -14,6 +14,9 @@
 # How does web browsers work?
 > Web browsers work on the request-responce cycle. A cient sends a request to the server and the server responses to the request.
 
+```
+https://search.com/index.html
+```
 | https:// | search.com | index.html |
 |----------|------------|------------|
 | protocol | domain     | path file  |
@@ -33,3 +36,25 @@
 Their might be various problems with data delivery such as a normal post mail derivery e.i `out of order`, `corrupt or data damage` and `lost of data`. Therefore, we have the other two protocols to look at this matter.
 * TCP: it helps us solve all this three problems that can happen to a data
 * UDP(User Datagram Protocol): it prevents only from data damage or corrupt such as messages and calls
+
+
+# HTTP:
+> core operational protocol in the `WWW` for transferring web documents.
+
+## HTTP request:
+```
+ GET / HTTP/1.1 
+ Host: developer.mozila.org
+ Accept-Language: en
+```
+| GET | / | HTTP/1.1 | Host: developer.mozila.org <br> Accept-Language: en |
+|-----|---|----------|-----------------------------------------------------|
+| http method | path | http version | headers                              |
+
+
+### HTTP methods:
+| GET      |  retrive information from the server |
+|-----     |--------------------------------------|
+| POST     |  send information to the server |
+| PUT      |  update information in the server |
+| DELETE   |  delete info in the server |
