@@ -54,7 +54,65 @@ Their might be various problems with data delivery such as a normal post mail de
 
 ### HTTP methods:
 | GET      |  retrive information from the server |
-|-----     |--------------------------------------|
+| :-----   |--------------------------------------|
 | POST     |  send information to the server |
 | PUT      |  update information in the server |
 | DELETE   |  delete info in the server |
+**the most popular HTTP versions are 1.1 and 2.0**
+
+## HTTP response:
+```
+HTTP/1.1 OK 200 
+(version, response status, response status code)
+```
+| Informational     |  100-199 |
+| :-----   |--------------------------------------|
+| Successful    |  200-299 |
+| Redirectional      |  300-399 |
+| Client-side error   |  400-499 |
+| Server-side    |  500-599 |
+**HTTPS is secure and encrypted**
+
+> when your computer is connected to the network, the DHCP is used to assign IP address to the computer. It keeps track of the computer in the network and their IP addresses.
+
+# Framework and Libraries
+## Framework: 
+> structure for the developers to work with; a blueprint. It in not that flexible. 
+
+| Advantages| Disadvantages |
+|:------------| ------------ |
+| time saving | not flexible |
+| high functionality | compatibility |
+| structure |       |
+
+## libraries: 
+> pieces of code for a specific purpose or function. It in flexible. 
+
+| Advantages| Disadvantages |
+|:------------| ------------ |
+| easily replacable | selecting library set |
+|  | compatibility |
+|  |       |
+
+**Overall: `faster development`, `less error`, `time saving`**
+
+# API
+> Appication Programming Interface.
+> set of function and procedures to create an application that access the features or data of a system. 
+> Eg. Browser API(DOM API, Geolocational API), REST API, Sensor-based API(IoT)
+
+## REST API
+> Representation State Transer API
+> a set of priniciple helps to build other efficient APIs.
+> provides responses to requests
+
+# IDE
+> Integrated Development Environment
+> software to build application.
+
+## Features:
+* syntax highlighting
+* error highlighting
+* IntelliSense
+* auto-complete
+* refactoring  -------------------------- change the structure of the program without disturing its functions
