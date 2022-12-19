@@ -14,5 +14,6 @@
 > Italic is used for the off-set text, like title, name, etc. and Emphasis is used to give stress/impact to the text like very, really, so.
 # Hyperlinks
 # img
-# table
-# form(different input types)
+# Table
+# Form(different input types)
+# DOM
