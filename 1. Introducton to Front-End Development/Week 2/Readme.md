@@ -118,7 +118,6 @@ Ordered list is defined by <ol>
 
 
 # img
-<<<<<<< HEAD
 > it is used to insert an image to the webpage. <img> tag is a single tag and has various attributes to define the property of the image.
 
 | attributes | functions |
@@ -140,4 +139,3 @@ Ordered list is defined by <ol>
 # Table
 # Form(different input types)
 # DOM
->>>>>>> bad26695a43814818e2a0246aa0cca40643c9cce
