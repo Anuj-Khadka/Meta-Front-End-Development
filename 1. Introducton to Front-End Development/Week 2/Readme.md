@@ -127,13 +127,51 @@ Ordered list is defined by <ol>
 | srcset     | makes an img responsive by assigning the screen viewpoint and img's height and width|
 | height     | describes the height of the image |
 | width      | describes the width of the image |
-
 ```html
     <img src="image.png" alt="example" height="250px" width="100px" />
 ```
 
 
-# table
+# Table
+> it is used to create a tabular structure inside the webpage. Table tag has various tags within it like `thead`, `tbody`, `tr`, `td` and so on.
+```html
+<table>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Age</td>
+        </tr>
+    </thead>
+</table>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # form(different input types)
 =======
 # Table
