@@ -1,4 +1,11 @@
 # What is JS? Its features.
+> JS is a high level programming language. Therefore, it has to be converted to binary code for the CPU to understand it.
+
+## Features of JS:
+* It is the only language for web development.
+* It is used everywhere: IoT, web, mobile etc.
+* Super simple and beginner friendly.
+* wide community and accessibility.
 
 # variables
 
