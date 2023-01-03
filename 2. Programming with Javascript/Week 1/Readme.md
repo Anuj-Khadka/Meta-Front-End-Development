@@ -24,6 +24,15 @@
 > * nested loop
 
 ## conditionals in loops
-
+> this is very helpful if you are working with a large data and have to check for a certain criteria within the data and then take action dependly. One of the example can be going through 1 to 100 and checking if the number is even or odd.
+```javascript
+for(let i = 1; i<=100; i++){
+  if(i%2 == 0){
+    console.log("even");
+  } else{
+    console.log("odd");
+   }
+}
+```
 
 **Truthy and Falsy**
