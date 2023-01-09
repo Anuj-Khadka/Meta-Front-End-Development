@@ -6,7 +6,16 @@ function start(){
   console.log("the function is running.");
  }
 ```
+
+
 ## function with parameters
+> some parameteric values are assigned or asked when the function is being declared, the values might be used inside the function for some task.");
+```javascript
+function sum(a, b){
+  return a + b;
+ }
+ sum(1, 2);
+```
 
 # Array
 
