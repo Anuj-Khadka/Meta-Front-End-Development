@@ -1,5 +1,11 @@
 # Functions
 ## function without parameters
+> no parameter values are assigned when the function is being declared.
+```javascript
+function start(){
+  console.log("the function is running.");
+ }
+```
 ## function with parameters
 
 # Array
