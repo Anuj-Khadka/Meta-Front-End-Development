@@ -18,6 +18,7 @@ function sum(a, b){
 ```
 
 # Array
+> array is a collection of similar type of datatypes.
 
 # Objects
 
