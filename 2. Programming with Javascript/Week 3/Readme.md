@@ -36,7 +36,7 @@
 
 
 
- **In other words, if you compare new String('plum') === new String('plum'), you'll get back false, while "plum" === "plum" returns true. You're getting the false when comparing objects because it is not the values that you pass to the constructor that are being compared, but rather the memory location where objects are saved.**
+ **In other words, if you compare `new String('plum') === new String('plum')`, you'll get back false, while `"plum" === "plum"` returns true. You're getting the false when comparing objects because it is not the values that you pass to the constructor that are being compared, but rather the memory location where objects are saved.**
 
  **To use a constructor function, I must prepend it with the operator new. For example, to create a new instance of the Date object, I can run: new Date(). What I get back is the current datetime. However, not all the built-in objects come with a constructor function. An example of such an object type is the built-in Math object. Running new Math() throws an Uncaught TypeError, informing us that Math is not a constructor.**
 
