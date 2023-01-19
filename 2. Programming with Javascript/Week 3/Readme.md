@@ -22,7 +22,7 @@
 * `let`:
 * `const`:
 
-**When you use let and const to declare a variable, it is scoped to the block - even within if statements and loops, like the for or while loops. Therefore, the quantity variable you create will only exist within the for loop.**
+When you use `let` and `const` to declare a variable, it is scoped to the block - even within if statements and loops, like the for or while loops. Therefore, the quantity variable you create will only exist within the for loop.**
 
  **The `this` keyword is an alias for the name of the object.**
 
