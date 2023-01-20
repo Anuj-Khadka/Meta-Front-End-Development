@@ -40,7 +40,7 @@ In other words, if you compare `new String('plum') === new String('plum')`, you
 
 To use a constructor function, I must prepend it with the operator new. For example, to create a new instance of the Date object, I can run: `new Date()`. What I get back is the current datetime. However, not all the built-in objects come with a constructor function. An example of such an object type is the built-in Math object. Running `new Math()` throws an Uncaught TypeError, informing us that Math is not a constructor.
 
-Instead of using Array, Function, and RegExp constructors, you should use their array literal, function literal, and pattern literal varieties: `[]`, `()` `{}`, and `/()/`.
+Instead of using Array, Function, and RegExp constructors, you should use their array literal, function literal, and pattern literal varieties: `[]`, `()`, `{}`, and `/()/`.
 
  # Prototype
  > prototype is an object that can be created to make other objects of its own form.
