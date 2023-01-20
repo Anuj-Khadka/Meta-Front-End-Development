@@ -24,7 +24,7 @@ function sum(a, b){
 
 # Math module
 
-# Bugs and errors
+# Bugs and Errors
 
 # Defensive Programming
 > Defensive programming is all about assuming that all the arguments a function will receive are of the wrong type,  the wrong value or both.
@@ -32,6 +32,6 @@ function sum(a, b){
 
 # Try Catch and Throw
 
-# Undefined, null and empty
+# Undefined, Null and Empty
 
 #
