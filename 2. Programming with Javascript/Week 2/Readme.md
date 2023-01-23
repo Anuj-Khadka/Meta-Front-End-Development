@@ -21,7 +21,13 @@ function sum(a, b){
 > array is a collection of similar type of datatypes.
 
 # Objects
-
+> object is a collection of key-value paired elements in javascript.
+```javascript
+let obj = {
+  name: "anuj",
+  class: 5
+}
+```
 # Math module
 
 # Bugs and Errors
