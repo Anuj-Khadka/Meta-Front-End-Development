@@ -51,3 +51,43 @@
 >            Cat          Bird
 >            /  \           \
 >    HouseCat   Tiger      Parrot
+
+
+# Destructuring 
+
+# for-in and for-of
+
+# template literal
+> a convinient way of defining a string which allows multiline string text, variables with a string coated with surly braces with a $ in front.
+```js
+let name = "user"
+let str = `
+ This allows a 
+ multiline string 
+ and also a variable within it
+ right, ${name}?
+`
+```
+
+# Data Structure
+> a way to organize data. There are basically 4 types of data structures in JavaScript.
+* `Array`: it is a non-iterable list of datatype or elements.
+* `Map`: it is similar to the array, but it can be iterated and also has key-value pair. it may be confused with objects but maps can have anything as key unlike object which has only strings or symbols.
+* `Object`: it is a set of key-value paired elements.
+*  `Set`: set is a list of all unique elements.
+
+
+# Spread and Rest operator
+> Spread can spread the elements of an array or object and add it to thenewly created array or object. it is used to unwrap items.
+> Rest is used to pack items into it. it is somehow used with destructuring. The rest operator allows you to take items from an array and use them to create a separate sub-array. 
+> Both spread and rest operator starts with "..." syntax.
+
+
+
+# Modules
+
+# Javascript Selector
+
+# Event Handling
+
+# JSON
