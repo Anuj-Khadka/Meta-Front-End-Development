@@ -1,14 +1,36 @@
 # Functions
 ## function without parameters
+> no parameter values are assigned when the function is being declared.
+```javascript
+function start(){
+  console.log("the function is running.");
+ }
+```
+
+
 ## function with parameters
+> some parameteric values are assigned or asked when the function is being declared, the values might be used inside the function for some task.");
+```javascript
+function sum(a, b){
+  return a + b;
+ }
+ sum(1, 2);
+```
 
 # Array
+> array is a collection of similar type of datatypes.
 
 # Objects
-
+> object is a collection of key-value paired elements in javascript.
+```javascript
+let obj = {
+  name: "anuj",
+  class: 5
+}
+```
 # Math module
 
-# Bugs and errors
+# Bugs and Errors
 
 # Defensive Programming
 > Defensive programming is all about assuming that all the arguments a function will receive are of the wrong type,  the wrong value or both.
@@ -16,6 +38,6 @@
 
 # Try Catch and Throw
 
-# Undefined, null and empty
+# Undefined, Null and Empty
 
 #
