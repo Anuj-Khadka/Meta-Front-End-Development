@@ -55,4 +55,5 @@ const dishData = [
   
   getDiscount(true, 2);
   getDiscount(false, 10);
+  getDiscount(false, "eight");
   
