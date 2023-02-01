@@ -1,5 +1,6 @@
 // Task 1: Code the timesTwo function declaration
 function timesTwo(num) {
+    // console.log(num * 2)
     return num * 2;
 }
 
