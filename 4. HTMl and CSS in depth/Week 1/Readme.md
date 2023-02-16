@@ -22,3 +22,7 @@ the user in a form is valid
 and conforms to rules defined by the developer. there are two types of validation: 
 * `Client-Side Validation`: it is done in the frontend of the website when the user starts filling their data in the form. For example, if the user doesn't enter the correct email, they will get a message of invalid email. This can be done using specific input type.
 * `Server-side Validation`: it is done in the backend of the website to prevent from malicious data entry and code bleach. It can perform more complex checks like database checks and requirements.
+
+## Field Set
+> field set groups the imput elements. If you do not add a fieldset element to each radio button, all radio buttons will belong to the same group.    
+
