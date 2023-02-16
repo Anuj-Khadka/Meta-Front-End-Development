@@ -26,3 +26,8 @@ and conforms to rules defined by the developer. there are two types of validatio
 ## Field Set
 > field set groups the imput elements. If you do not add a fieldset element to each radio button, all radio buttons will belong to the same group.    
 
+## Form Submission Methods
+>  The HTTP POST method is more secure than the HTTP GET method. When a form is submitted using the Post method, the form data is inserted into the content of the HTTP request instead of appended at the end of the URL as is done with the GET method.
+* `GET`: data transmit to server via the address in the URL bar of the web browser, URL lenght is limited to 2000 chars by browser, lack of security 
+* `POST`: data transmit to server via the body of the HTTP request
+
