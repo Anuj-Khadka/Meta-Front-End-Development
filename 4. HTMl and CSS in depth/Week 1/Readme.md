@@ -31,3 +31,4 @@ and conforms to rules defined by the developer. there are two types of validatio
 * `GET`: data transmit to server via the address in the URL bar of the web browser, URL lenght is limited to 2000 chars by browser, lack of security 
 * `POST`: data transmit to server via the body of the HTTP request
 
+## 
