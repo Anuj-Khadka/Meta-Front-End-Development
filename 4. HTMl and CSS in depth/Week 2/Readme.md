@@ -44,3 +44,9 @@ Denotes a percentage value in relation to its parent element.
 Many of these units are used in terms of the relative size of fonts. Some units are more suitable depending on the relative context. Like when the dimensions of the viewport are important, it's more appropriate to use vw and vh. In a broader context, the relative units you will see most frequently used are percentage, em, vh, vw and rem.
 
 Much like the absolute and relative units discussed above, certain properties have their own set of acceptable values that need to be taken into account. For example, color-based properties such as `backgroundcolor` will have values such as hexadecimal, `rgb(), rgba(), hsl(), hsla()` and so on. Each property should be explored on an individual basis and practicing with the code will help you to decide which of these units of measurement are the most suitable choice.
+
+# Specificity
+
+`ID`: 100
+`Class`: 10
+`Element`: 1
