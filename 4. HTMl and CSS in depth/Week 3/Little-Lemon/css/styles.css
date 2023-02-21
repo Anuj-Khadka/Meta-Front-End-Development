@@ -1,0 +1,132 @@
+body {
+  background-color: #edefee;
+  font-family: "Markazi Text", serif;
+  cursor: default;
+  padding: 1rem 5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+p::selection {
+  color: #065f4c;
+}
+
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+}
+
+nav {
+  background-color: #333333;
+  border-radius: .8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0.5rem;
+  margin-right: 1rem;
+}
+
+nav ul a {
+  color: #edefee;
+  text-decoration: none;
+  transition: 1s;
+}
+
+nav ul a:active {
+  text-decoration: underline;
+}
+
+nav ul a:hover {
+  color: #bddb11;
+}
+
+section {
+  display: flex;
+  gap: 2rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+article {
+  flex: 1;
+  border-radius: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+article ul li span {
+  font-size: 1rem;
+}
+
+article ul li a {
+  color: inherit;
+  font-size: 1.1rem !important;
+}
+
+article ul {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+article a:hover {
+  color: #065f4c;
+}
+
+.offerings article {
+  background-color: #fbdabb79;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.offerings article:hover {
+  box-shadow: 1px 1px 15px #3333336b;
+}
+
+footer {
+  border-top: solid 1px #333333;
+  margin-top: 2rem;
+  padding: 2rem 2rem 1rem 2rem;
+  display: flex;
+  gap: 2rem 1rem;
+}
+
+footer div {
+    width:50%;
+}
+
+footer div img {
+  max-width: 50%;
+  
+}
+
+footer p {
+  text-align: right;
+}
+
+footer div {
+  flex: 1;
+}
