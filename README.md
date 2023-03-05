@@ -2,4 +2,4 @@
 This repositary in a personal note repository of all the lesson contents taught in the the coursera course offered by Meta.
 
 ## Courses 
-* 
+* (Module 1 - Introduction to Front-end Development)[1. Introduction to Front-end Development]
