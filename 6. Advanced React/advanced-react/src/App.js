@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+
+// week one
+import ExerciseOneApp from './Week 1/Exercise 1 - Create a basic List component/src/ExerciseOneApp';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Week 1 */}
+      <ExerciseOneApp />
     </div>
   );
 }
