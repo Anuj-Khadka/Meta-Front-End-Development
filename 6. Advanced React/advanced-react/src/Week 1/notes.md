@@ -28,3 +28,44 @@ const sortArr = arr.sort((a, b) => {
 - Keys instruct React about whether a specific element’s internal state should be preserved or not.
 - Keys instruct React how to treat a specific element when an update occurs.
 *Although item indexes can be used as keys, using indexes as keys can create problems if the order of your list of items is prone to change and can negatively affect performance. Using unique and stable identifiers, such as item IDs, is recommended instead.*
+
+
+## Controlled Components:
+> State delegation is performed via the value prop. A combination of local state and the value prop is needed to create a controlled component.  
+
+```Javascript
+// uncontrolled component ----- using ref to access value
+const Form = () => { 
+ const inputRef = useRef(null); 
+
+ const handleSubmit = () => { 
+   const inputValue = inputRef.current.value; 
+   // Do something with the value 
+ } 
+ return ( 
+   <form onSubmit={handleSubmit}> 
+     <input ref={inputRef} type="text" /> 
+   </form> 
+ ); 
+};
+
+
+// controlled component  --- using function to access value
+const Form = () => { 
+ const [value, setValue] = useState(""); 
+
+ const handleChange = (e) => { 
+   setValue(e.target.value) 
+ } 
+
+ return ( 
+   <form> 
+     <input 
+       value={value} 
+       onChange={handleChange} 
+       type="text" 
+     /> 
+   </form> 
+ ); 
+}; 
+```
