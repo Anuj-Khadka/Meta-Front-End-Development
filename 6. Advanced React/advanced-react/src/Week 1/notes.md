@@ -69,3 +69,9 @@ const Form = () => {
  ); 
 }; 
 ```
+
+
+
+## Context API
+* Context is useful for global state. It is the right tool when you needto share data that can be considered global for a tree of React components. 
+* React solved the problem of parent components having to drilldown props all the way to the children that need to consume them byintroducing the Context API. 
