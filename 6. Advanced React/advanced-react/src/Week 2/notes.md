@@ -1,3 +1,10 @@
+## Some rules for hooks:
+
+- call hooks only on the React functions
+- call hooks only at the top level
+- multiple state or effect hooks are allowed
+- make multiple hook call in a sequence
+
 ## useState
 
 - When using the useState hook, you must use the state-updating function to update state.
