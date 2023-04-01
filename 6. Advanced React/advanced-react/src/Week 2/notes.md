@@ -17,3 +17,6 @@ _You can use an object with multiple properties as the initial value of the stat
 
 ## useReducer
 > The useReducer hook gets an initial state and a reducer function.  
+
+## useRef
+> The returned value from the useRef hook invocation is an object.  
