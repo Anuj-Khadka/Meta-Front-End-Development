@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
-function App() {
-  const [user, setUser] = React.useState([]);
+function ExerciseFiveApp() {
+  const [user, setUser] = useState([]);
 
   const fetchData = () => {
     fetch("https://randomuser.me/api/?results=1")
@@ -12,7 +12,7 @@ function App() {
       });
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     fetchData();
   }, []);
 
@@ -27,4 +27,4 @@ function App() {
   );
 }
 
-export default App;
+export default ExerciseFiveApp;
