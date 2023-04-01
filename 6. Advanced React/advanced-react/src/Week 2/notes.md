@@ -13,3 +13,7 @@
 - The useState hook invocation returns a two-member array.
 
 _You can use an object with multiple properties as the initial value of the state variable, just like the formData state variable in the example, where the useState hook was invoked with the object containing two properties (the goal property and the by property)._
+
+
+## useReducer
+> The useReducer hook gets an initial state and a reducer function.  
