@@ -1,11 +1,10 @@
-import "./App.css";
 import { RadioGroup, RadioOption } from "./Radio";
 import { useState } from "react";
 
-function App() {
+function ExerciseSevenApp() {
   const [selected, setSelected] = useState("");
   return (
-    <div className="App">
+    <div className="ExerciseSevenApp">
       <h2>How did you hear about Little Lemon?</h2>
       <RadioGroup onChange={setSelected} selected={selected}>
         <RadioOption value="social_media">Social Media</RadioOption>
@@ -18,4 +17,4 @@ function App() {
   );
 }
 
-export default App;
+export default ExerciseSevenApp;
