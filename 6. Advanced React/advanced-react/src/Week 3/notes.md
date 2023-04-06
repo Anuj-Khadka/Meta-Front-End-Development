@@ -24,3 +24,34 @@ React.children.map(children, callback (child, index)=>{return child})
 
 - It enhances or extends the capabilities of the component provided.
 - You can define logic in a single place, share it across many components, and keep them unchanged and stateless.
+
+## Testing
+
+- ensure Quality application
+- saves time and money
+- discovers bugs
+- maintainable
+
+### Jest
+
+> Jest is a JavaScript test runner that lets you access an artificial DOM called jsdom. While jsdom is only an approximation of how the browser works, it is often good enough for testing React components.
+
+- Js test runner
+- provides access to JS-DOM
+- good iteration speed
+- mocks the application
+
+### React-Testing-Library
+
+> React Testing Library is designed to fulfill all testing best practices out of the box, so that you are able to focus on the business logic your tests need to run assertions on.
+
+- set of utilities
+- fulfills best practices
+
+# Continious Integration
+
+> Continuous Integration (CI) is a software development technique in which developers use a version control system, like Git, and push code changes daily, multiple times a day.
+
+- Improved developer productivity.
+- Find bugs earlier and fix them faster.
+- Deliver working software more often.
