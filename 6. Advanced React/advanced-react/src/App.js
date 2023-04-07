@@ -7,6 +7,7 @@ import './App.css';
 // import ExerciseSixApp from './Week 2/Exercise 6 - Create your own custom hook, usePrevious/src/ExerciseSixApp';
 // import ExerciseSevenApp from './Week 3/Exercise 7 - Build a Radio Group Component/src/ExerciseSeven';
 import ExerciseEightApp from './Week 3/Exercise 8 - Implementing scroller position with render props/src/ExerciseEightApp';
+import ExerciseNineApp from './Week 3/Exercise 9 - Writing more test scenarios/src/ExerciseNineApp';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
       {/* <ExerciseFiveApp /> */}
       {/* <ExerciseSixApp /> */}
       {/* <ExerciseSevenApp /> */}
-      <ExerciseEightApp />
+      {/* <ExerciseEightApp /> */}
+      <ExerciseNineApp />
     </div>
   );
 }
