@@ -21,3 +21,12 @@ _Wireframing is a representation of the interface concerned with placement and h
 
 # UI
 > UI presents interactive, visual elements users can interact with on-screen to communicate with technology.
+
+
+# User-centerd Design
+## User Interview
+> User interviews are an effective approach to learning more about how and what your users think and what their goals are.
+
+## User Persona
+> The user persona is a fictional character profile that represents the main clientele of a company. It's a realistic model of the people you are seeking to assist.
+
