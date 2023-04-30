@@ -9,3 +9,17 @@
 - `Kerning`: Kerning is the space that exists between two specific letters.
 - `Leading`: The space between two lines of text is known as leading.
 - `White space`: In typography, white space refers to the space between blocks of text.
+
+# Grid System
+
+> A grid system is a structure of invisible lines and columns to the user that hold elements and contents of a design of a webpage together. They provide designs with a consistent rhythm and limit decision-making.
+
+They are made up of
+
+- Columns `12 on desktop,
+  8 on a tablet, and
+  4 on mobile. `
+- Rows
+- Gutters
+- Modules
+- Margins
