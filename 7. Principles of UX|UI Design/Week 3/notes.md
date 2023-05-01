@@ -17,9 +17,13 @@
 They are made up of
 
 - Columns `12 on desktop,
-  8 on a tablet, and
-  4 on mobile. `
+8 on a tablet, and
+4 on mobile. `
 - Rows
 - Gutters
 - Modules
 - Margins
+
+# Usability Testing
+
+> Usability testing is the process of getting actual people to use a real website, app or other product you've designed while tracking their actions and reactions.
