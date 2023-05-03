@@ -5,3 +5,4 @@ This repositary in a personal note repository of all the lesson, contents taught
 - Introduction to Front-end Development
 - Programming in Javascript
 - Version Control
+- HTML and CSS in Depth
