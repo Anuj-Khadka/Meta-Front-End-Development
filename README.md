@@ -3,4 +3,4 @@ This repositary in a personal note repository of all the lesson, contents taught
 
 ## Courses 
 - Introduction to Front-end Development
-- 
+- Programming in Javascript
