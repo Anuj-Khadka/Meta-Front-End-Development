@@ -8,3 +8,4 @@ This repositary in a personal note repository of all the lesson, contents taught
 - HTML and CSS in Depth
 - React Basics
 - Advanced React
+- Principle of UI/UX
