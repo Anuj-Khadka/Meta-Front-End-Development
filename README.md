@@ -7,3 +7,4 @@ This repositary in a personal note repository of all the lesson, contents taught
 - Version Control
 - HTML and CSS in Depth
 - React Basics
+- Advanced React
