@@ -6,3 +6,4 @@ This repositary in a personal note repository of all the lesson, contents taught
 - Programming in Javascript
 - Version Control
 - HTML and CSS in Depth
+- React Basics
