@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style>.ͼ1.cm-editor.cm-focused {outline: 1px dotted #212121;}
+.ͼ1.cm-editor {position: relative !important; box-sizing: border-box; display: flex !important; flex-direction: column;}
+.ͼ1 .cm-scroller {display: flex !important; align-items: flex-start !important; font-family: monospace; line-height: 1.4; height: 100%; overflow-x: auto; position: relative; z-index: 0;}
+.ͼ1 .cm-content[contenteditable=true] {-webkit-user-modify: read-write-plaintext-only;}
+.ͼ1 .cm-content {margin: 0; flex-grow: 2; flex-shrink: 0; min-height: 100%; display: block; white-space: pre; word-wrap: normal; box-sizing: border-box; padding: 4px 0; outline: none;}
+.ͼ1 .cm-lineWrapping {white-space: pre-wrap; white-space: break-spaces; word-break: break-word; overflow-wrap: anywhere; flex-shrink: 1;}
+.ͼ2 .cm-content {caret-color: black;}
+.ͼ3 .cm-content {caret-color: white;}
+.ͼ1 .cm-line {display: block; padding: 0 2px 0 4px;}
+.ͼ1 .cm-selectionLayer {z-index: -1; contain: size style;}
+.ͼ1 .cm-selectionBackground {position: absolute;}
+.ͼ2 .cm-selectionBackground {background: #d9d9d9;}
+.ͼ3 .cm-selectionBackground {background: #222;}
+.ͼ2.cm-focused .cm-selectionBackground {background: #d7d4f0;}
+.ͼ3.cm-focused .cm-selectionBackground {background: #233;}
+.ͼ1 .cm-cursorLayer {z-index: 100; contain: size style; pointer-events: none;}
+.ͼ1.cm-focused .cm-cursorLayer {animation: steps(1) cm-blink 1.2s infinite;}
+@keyframes cm-blink {50% {opacity: 0;}}
+@keyframes cm-blink2 {50% {opacity: 0;}}
+.ͼ1 .cm-cursor, .ͼ1 .cm-dropCursor {position: absolute; border-left: 1.2px solid black; margin-left: -0.6px; pointer-events: none;}
+.ͼ1 .cm-cursor {display: none;}
+.ͼ3 .cm-cursor {border-left-color: #444;}
+.ͼ1.cm-focused .cm-cursor {display: block;}
+.ͼ2 .cm-activeLine {background-color: #f3f9ff;}
+.ͼ3 .cm-activeLine {background-color: #223039;}
+.ͼ2 .cm-specialChar {color: red;}
+.ͼ3 .cm-specialChar {color: #f78;}
+.ͼ1 .cm-gutters {flex-shrink: 0; display: flex; height: 100%; box-sizing: border-box; left: 0; z-index: 200;}
+.ͼ2 .cm-gutters {background-color: #f5f5f5; color: #6c6c6c; border-right: 1px solid #ddd;}
+.ͼ3 .cm-gutters {background-color: #333338; color: #ccc;}
+.ͼ1 .cm-gutter {display: flex !important; flex-direction: column; flex-shrink: 0; box-sizing: border-box; min-height: 100%; overflow: hidden;}
+.ͼ1 .cm-gutterElement {box-sizing: border-box;}
+.ͼ1 .cm-lineNumbers .cm-gutterElement {padding: 0 3px 0 5px; min-width: 20px; text-align: right; white-space: nowrap;}
+.ͼ2 .cm-activeLineGutter {background-color: #e2f2ff;}
+.ͼ3 .cm-activeLineGutter {background-color: #222227;}
+.ͼ1 .cm-panels {box-sizing: border-box; position: sticky; left: 0; right: 0;}
+.ͼ2 .cm-panels {background-color: #f5f5f5; color: black;}
+.ͼ2 .cm-panels-top {border-bottom: 1px solid #ddd;}
+.ͼ2 .cm-panels-bottom {border-top: 1px solid #ddd;}
+.ͼ3 .cm-panels {background-color: #333338; color: white;}
+.ͼ1 .cm-tab {display: inline-block; overflow: hidden; vertical-align: bottom;}
+.ͼ1 .cm-widgetBuffer {vertical-align: text-top; height: 1em; width: 0; display: inline;}
+.ͼ1 .cm-placeholder {color: #888; display: inline-block; vertical-align: top;}
+.ͼ1 .cm-button {vertical-align: middle; color: inherit; font-size: 70%; padding: .2em 1em; border-radius: 1px;}
+.ͼ2 .cm-button:active {background-image: linear-gradient(#b4b4b4, #d0d3d6);}
+.ͼ2 .cm-button {background-image: linear-gradient(#eff1f5, #d9d9df); border: 1px solid #888;}
+.ͼ3 .cm-button:active {background-image: linear-gradient(#111, #333);}
+.ͼ3 .cm-button {background-image: linear-gradient(#393939, #111); border: 1px solid #888;}
+.ͼ1 .cm-textfield {vertical-align: middle; color: inherit; font-size: 70%; border: 1px solid silver; padding: .2em .5em;}
+.ͼ2 .cm-textfield {background-color: white;}
+.ͼ3 .cm-textfield {border: 1px solid #555; background-color: inherit;}
+.ͼ1 .cm-selectionMatch {background-color: #99ff7780;}
+.ͼ1 .cm-searchMatch .cm-selectionMatch {background-color: transparent;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > li {overflow-x: hidden; text-overflow: ellipsis; cursor: pointer; padding: 1px 3px; line-height: 1.2;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul {font-family: monospace; white-space: nowrap; overflow: hidden auto; max-width: 700px; max-width: min(700px, 95vw); min-width: 250px; max-height: 10em; list-style: none; margin: 0; padding: 0;}
+.ͼ2 .cm-tooltip-autocomplete ul li[aria-selected] {background: #17c; color: white;}
+.ͼ3 .cm-tooltip-autocomplete ul li[aria-selected] {background: #347; color: white;}
+.ͼ1 .cm-completionListIncompleteTop:before, .ͼ1 .cm-completionListIncompleteBottom:after {content: "···"; opacity: 0.5; display: block; text-align: center;}
+.ͼ1 .cm-tooltip.cm-completionInfo {position: absolute; padding: 3px 9px; width: max-content; max-width: 300px;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-left {right: 100%;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-right {left: 100%;}
+.ͼ2 .cm-snippetField {background-color: #00000022;}
+.ͼ3 .cm-snippetField {background-color: #ffffff22;}
+.ͼ1 .cm-snippetFieldPosition {vertical-align: text-top; width: 0; height: 1.15em; margin: 0 -0.7px -.7em; border-left: 1.4px dotted #888;}
+.ͼ1 .cm-completionMatchedText {text-decoration: underline;}
+.ͼ1 .cm-completionDetail {margin-left: 0.5em; font-style: italic;}
+.ͼ1 .cm-completionIcon {font-size: 90%; width: .8em; display: inline-block; text-align: center; padding-right: .6em; opacity: 0.6;}
+.ͼ1 .cm-completionIcon-function:after, .ͼ1 .cm-completionIcon-method:after {content: 'ƒ';}
+.ͼ1 .cm-completionIcon-class:after {content: '○';}
+.ͼ1 .cm-completionIcon-interface:after {content: '◌';}
+.ͼ1 .cm-completionIcon-variable:after {content: '𝑥';}
+.ͼ1 .cm-completionIcon-constant:after {content: '𝐶';}
+.ͼ1 .cm-completionIcon-type:after {content: '𝑡';}
+.ͼ1 .cm-completionIcon-enum:after {content: '∪';}
+.ͼ1 .cm-completionIcon-property:after {content: '□';}
+.ͼ1 .cm-completionIcon-keyword:after {content: '🔑︎';}
+.ͼ1 .cm-completionIcon-namespace:after {content: '▢';}
+.ͼ1 .cm-completionIcon-text:after {content: 'abc'; font-size: 50%; vertical-align: middle;}
+.ͼ1 .cm-tooltip {z-index: 100;}
+.ͼ2 .cm-tooltip {border: 1px solid #bbb; background-color: #f5f5f5;}
+.ͼ2 .cm-tooltip-section:not(:first-child) {border-top: 1px solid #bbb;}
+.ͼ3 .cm-tooltip {background-color: #333338; color: white;}
+.ͼ1 .cm-tooltip-arrow:before, .ͼ1 .cm-tooltip-arrow:after {content: ''; position: absolute; width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow:before {border-top: 7px solid #bbb;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow:after {border-top: 7px solid #f5f5f5; bottom: 1px;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow {bottom: -7px;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow:before {border-bottom: 7px solid #bbb;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow:after {border-bottom: 7px solid #f5f5f5; top: 1px;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow {top: -7px;}
+.ͼ1 .cm-tooltip-arrow {height: 7px; width: 14px; position: absolute; z-index: -1; overflow: hidden;}
+.ͼ3 .cm-tooltip .cm-tooltip-arrow:before {border-top-color: #333338; border-bottom-color: #333338;}
+.ͼ3 .cm-tooltip .cm-tooltip-arrow:after {border-top-color: transparent; border-bottom-color: transparent;}
+.ͼ1.cm-focused .cm-matchingBracket {background-color: #328c8252;}
+.ͼ1.cm-focused .cm-nonmatchingBracket {background-color: #bb555544;}
+.ͼ1 .cm-foldPlaceholder {background-color: #eee; border: 1px solid #ddd; color: #888; border-radius: .2em; margin: 0 1px; padding: 0 1px; cursor: pointer;}
+.ͼ1 .cm-foldGutter span {padding: 0 1px; cursor: pointer;}
+.ͼ1e {color: #6c6783;}
+.ͼ1f {color: #ffcc99;}
+.ͼ1g {color: #eeebff;}
+.ͼ1h {color: #7a63ee;}
+.ͼ1i {color: #ffad5c;}
+.ͼ1j {color: #ffb870;}
+.ͼ1k {color: #9a86fd;}
+.ͼ1l {color: #e09142;}
+.ͼ1d {background-color: #2a2734; color: #6c6783;}
+.ͼ1d .cm-gutters {background-color: #2a2734; color: #545167;}
+.ͼ1d .cm-content {caret-color: #ffad5c;}
+.ͼ1d .cm-cursor, .ͼ1d .cm-dropCursor {border-left-color: #ffad5c;}
+.ͼ1d .cm-activeLine {background-color: #36334280;}
+.ͼ1d .cm-activeLineGutter {background-color: #36334280;}
+.ͼ1d.cm-focused .cm-selectionBackground .cm-selectionBackground, .ͼ1d .cm-selectionLayer .cm-selectionBackground, .ͼ1d ::selection {background-color: rgba(255, 255, 255, 0.1);}
+.ͼ97 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ95 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ93 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ91 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8z {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8x {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8v {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8t {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8r {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8p {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8n {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8l {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8j {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8h {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8f {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8d {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8b {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ89 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ87 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ85 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ83 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ81 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7z {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7x {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7v {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7t {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7r {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7p {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7n {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7l {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7j {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7h {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7f {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7d {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7b {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ79 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ77 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ75 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ73 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ71 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6z {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6x {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6v {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6t {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6r {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6p {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6n {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6l {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6j {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6h {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6f {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6d {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6b {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ69 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ67 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ65 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ63 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ61 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5z {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5x {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5v {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5t {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5r {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5p {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5n {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5l {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5j {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5h {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5f {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5d {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5b {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ59 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ57 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ55 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ53 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ51 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4z {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4x {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4v {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4t {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4r {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4p {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4n {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4l {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4j {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4h {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4f {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4d {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4b {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ49 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ47 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ45 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ43 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ41 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3z {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3x {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3v {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3t {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3r {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3p {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3n {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3l {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3j {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3h {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3f {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3d {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3b {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ39 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ37 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ35 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ33 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ31 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2z {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2x {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2v {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2t {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2r {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2p {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2n {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2l {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2j {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2h {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2f {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2d {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2b {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ29 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ27 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ25 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ23 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ21 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ1z {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ1x {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ1v {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ1r {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5 {color: #7a757a;}
+.ͼ6 {text-decoration: underline;}
+.ͼ7 {text-decoration: underline; font-weight: bold;}
+.ͼ8 {font-style: italic;}
+.ͼ9 {font-weight: bold;}
+.ͼa {text-decoration: line-through;}
+.ͼb {color: #708;}
+.ͼc {color: #219;}
+.ͼd {color: #164;}
+.ͼe {color: #a11;}
+.ͼf {color: #e40;}
+.ͼg {color: #00f;}
+.ͼh {color: #30a;}
+.ͼi {color: #085;}
+.ͼj {color: #167;}
+.ͼk {color: #256;}
+.ͼl {color: #00c;}
+.ͼm {color: #940;}
+.ͼn {color: #f00;}
+.ͼ4 .cm-line ::selection {background-color: transparent !important;}
+.ͼ4 .cm-line::selection {background-color: transparent !important;}
+.ͼ4 .cm-line {caret-color: transparent !important;}
+</style><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>Target #144 (Long Heart) - CSSBattle</title><meta property="og:description" content="CSS Code Golfing game is here!"><meta name="twitter:card" content="summary_large_image"><link rel="shortcut icon" href="https://cssbattle.dev/images/logo-square.png"><meta property="og:url" content="https://cssbattle.dev/play/144"><meta property="og:image" content="https://cssbattle.dev/api/socialImage/target?id=144"><meta property="og:title" content="Target #144 (Long Heart) - CSSBattle"><style id="critical-css" type="ruby">/* CRITICAL CSS */
+          body {
+            background-color: #171d23;
+          }
+
+          body:after {
+            font-size: 1.5rem;
+            text-align: center;
+            font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono',
+              'Lucida Console', monospace;
+            color: #cbd1e1;
+            display: block;
+            content: 'Hang on! The battleground is getting setup...';
+            width: 400px;
+            position: fixed;
+            top: 40vh;
+            left: calc(50vw - 200px);
+            opacity: 0;
+            animation: 0.3s show ease forwards;
+            animation-delay: 1s;
+          }
+
+          @keyframes show {
+            to {
+              opacity: 1;
+            }
+          }</style><meta name="next-head-count" content="10"><link rel="preload" href="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/d36a093ad00ac304.css" as="style"><link rel="stylesheet" href="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/d36a093ad00ac304.css" data-n-g=""><link rel="preload" href="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/12b94199940a6e02.css" as="style"><link rel="stylesheet" href="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/12b94199940a6e02.css" data-n-p=""><noscript data-n-css=""></noscript><script type="text/javascript" async="" src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/analytics.js"></script><script type="text/javascript" async="" src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/js_002"></script><script defer="defer" nomodule="" src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/polyfills-c67a75d1b6f99dc8.js"></script><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/webpack-c1fee78be4a04a68.js" defer="defer"></script><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/framework-25ee7391691268aa.js" defer="defer"></script><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/main-18b0d38af79cc7b2.js" defer="defer"></script><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/_app-f9f0588769d68cce.js" defer="defer"></script><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/154-1dc6e25ed87b66aa.js" defer="defer"></script><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/676-d60a5de476405ef4.js" defer="defer"></script><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/836-ee217ab691c5eb78.js" defer="defer"></script><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/481-b7f61966aad61af9.js" defer="defer"></script><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/[levelId]-0a78f4162028ff44.js" defer="defer"></script><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/_buildManifest.js" defer="defer"></script><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/_ssgManifest.js" defer="defer"></script><link rel="stylesheet" type="text/css" href="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/0dbce7f972644dd5.css"><link as="script" rel="prefetch" href="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/index-66fe8d9e1599baa3.js"><link as="script" rel="prefetch" href="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/learn-4df251d0e4f11d49.js"><link as="script" rel="prefetch" href="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/pro-ac0ca5ef3ab0e511.js"><link as="script" rel="prefetch" href="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/tips-83effec308d19c5f.js"><link as="script" rel="prefetch" href="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/faqs-dd12da0e04a7f1ea.js"><link as="script" rel="prefetch" href="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/about-53eec2278281108a.js"><link as="script" rel="prefetch" href="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/become-a-sponsor-cc632d4d9f58f223.js"><link as="script" rel="prefetch" href="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/privacy-and-terms-e37eb2ef3ffa42fb.js"><link as="script" rel="prefetch" href="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/[battleId]-10472d9a9e993777.js"><style>[data-ea-publisher].loaded,[data-ea-type].loaded{font-size:14px;font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;font-weight:normal;font-style:normal;leter-spacing:0px;vertical-align:baseline;line-height:1.3em}[data-ea-publisher].loaded a,[data-ea-type].loaded a{text-decoration:none}[data-ea-publisher].loaded .ea-pixel,[data-ea-type].loaded .ea-pixel{display:none}[data-ea-publisher].loaded .ea-content,[data-ea-type].loaded .ea-content{margin:1em 1em 0.5em 1em;padding:1em;background:rgba(0,0,0,0.03);color:#505050}[data-ea-publisher].loaded .ea-content a:link,[data-ea-type].loaded .ea-content a:link{color:#505050}[data-ea-publisher].loaded .ea-content a:visited,[data-ea-type].loaded .ea-content a:visited{color:#505050}[data-ea-publisher].loaded .ea-content a:hover,[data-ea-type].loaded .ea-content a:hover{color:#373737}[data-ea-publisher].loaded .ea-content a:active,[data-ea-type].loaded .ea-content a:active{color:#373737}[data-ea-publisher].loaded .ea-content a strong,[data-ea-publisher].loaded .ea-content a b,[data-ea-type].loaded .ea-content a strong,[data-ea-type].loaded .ea-content a b{color:#088cdb}[data-ea-publisher].loaded .ea-callout a:link,[data-ea-type].loaded .ea-callout a:link{color:#6a6a6a}[data-ea-publisher].loaded .ea-callout a:visited,[data-ea-type].loaded .ea-callout a:visited{color:#6a6a6a}[data-ea-publisher].loaded .ea-callout a:hover,[data-ea-type].loaded .ea-callout a:hover{color:#505050}[data-ea-publisher].loaded .ea-callout a:active,[data-ea-type].loaded .ea-callout a:active{color:#505050}[data-ea-publisher].loaded .ea-callout a strong,[data-ea-publisher].loaded .ea-callout a b,[data-ea-type].loaded .ea-callout a strong,[data-ea-type].loaded .ea-callout a b{color:#088cdb}[data-ea-publisher].loaded .ea-callout a,[data-ea-type].loaded .ea-callout a{font-size:0.8em}[data-ea-publisher].loaded.dark .ea-content,[data-ea-type].loaded.dark .ea-content{background:rgba(255,255,255,0.05);color:#dcdcdc}[data-ea-publisher].loaded.dark .ea-content a:link,[data-ea-type].loaded.dark .ea-content a:link{color:#dcdcdc}[data-ea-publisher].loaded.dark .ea-content a:visited,[data-ea-type].loaded.dark .ea-content a:visited{color:#dcdcdc}[data-ea-publisher].loaded.dark .ea-content a:hover,[data-ea-type].loaded.dark .ea-content a:hover{color:#f6f6f6}[data-ea-publisher].loaded.dark .ea-content a:active,[data-ea-type].loaded.dark .ea-content a:active{color:#f6f6f6}[data-ea-publisher].loaded.dark .ea-content a strong,[data-ea-publisher].loaded.dark .ea-content a b,[data-ea-type].loaded.dark .ea-content a strong,[data-ea-type].loaded.dark .ea-content a b{color:#50baf9}[data-ea-publisher].loaded.dark .ea-callout a:link,[data-ea-type].loaded.dark .ea-callout a:link{color:#c3c3c3}[data-ea-publisher].loaded.dark .ea-callout a:visited,[data-ea-type].loaded.dark .ea-callout a:visited{color:#c3c3c3}[data-ea-publisher].loaded.dark .ea-callout a:hover,[data-ea-type].loaded.dark .ea-callout a:hover{color:#dcdcdc}[data-ea-publisher].loaded.dark .ea-callout a:active,[data-ea-type].loaded.dark .ea-callout a:active{color:#dcdcdc}[data-ea-publisher].loaded.dark .ea-callout a strong,[data-ea-publisher].loaded.dark .ea-callout a b,[data-ea-type].loaded.dark .ea-callout a strong,[data-ea-type].loaded.dark .ea-callout a b{color:#50baf9}@media (prefers-color-scheme: dark){[data-ea-publisher].loaded.adaptive .ea-content,[data-ea-type].loaded.adaptive .ea-content{background:rgba(255,255,255,0.05);color:#dcdcdc}[data-ea-publisher].loaded.adaptive .ea-content a:link,[data-ea-type].loaded.adaptive .ea-content a:link{color:#dcdcdc}[data-ea-publisher].loaded.adaptive .ea-content a:visited,[data-ea-type].loaded.adaptive .ea-content a:visited{color:#dcdcdc}[data-ea-publisher].loaded.adaptive .ea-content a:hover,[data-ea-type].loaded.adaptive .ea-content a:hover{color:#f6f6f6}[data-ea-publisher].loaded.adaptive .ea-content a:active,[data-ea-type].loaded.adaptive .ea-content a:active{color:#f6f6f6}[data-ea-publisher].loaded.adaptive .ea-content a strong,[data-ea-publisher].loaded.adaptive .ea-content a b,[data-ea-type].loaded.adaptive .ea-content a strong,[data-ea-type].loaded.adaptive .ea-content a b{color:#50baf9}[data-ea-publisher].loaded.adaptive .ea-callout a:link,[data-ea-type].loaded.adaptive .ea-callout a:link{color:#c3c3c3}[data-ea-publisher].loaded.adaptive .ea-callout a:visited,[data-ea-type].loaded.adaptive .ea-callout a:visited{color:#c3c3c3}[data-ea-publisher].loaded.adaptive .ea-callout a:hover,[data-ea-type].loaded.adaptive .ea-callout a:hover{color:#dcdcdc}[data-ea-publisher].loaded.adaptive .ea-callout a:active,[data-ea-type].loaded.adaptive .ea-callout a:active{color:#dcdcdc}[data-ea-publisher].loaded.adaptive .ea-callout a strong,[data-ea-publisher].loaded.adaptive .ea-callout a b,[data-ea-type].loaded.adaptive .ea-callout a strong,[data-ea-type].loaded.adaptive .ea-callout a b{color:#50baf9}}[data-ea-publisher].loaded .ea-content,[data-ea-type].loaded .ea-content{border:0px;border-radius:3px;box-shadow:0px 2px 3px rgba(0,0,0,0.15)}[data-ea-publisher].loaded.raised .ea-content,[data-ea-type].loaded.raised .ea-content{border:0px;border-radius:3px;box-shadow:0px 2px 3px rgba(0,0,0,0.15)}[data-ea-publisher].loaded.bordered .ea-content,[data-ea-type].loaded.bordered .ea-content{border:1px solid rgba(0,0,0,0.04);border-radius:3px;box-shadow:none}[data-ea-publisher].loaded.bordered.dark .ea-content,[data-ea-type].loaded.bordered.dark .ea-content{border:1px solid rgba(255,255,255,0.07)}@media (prefers-color-scheme: dark){[data-ea-publisher].loaded.bordered.adaptive .ea-content,[data-ea-type].loaded.bordered.adaptive .ea-content{border:1px solid rgba(255,255,255,0.07)}}[data-ea-publisher].loaded.flat .ea-content,[data-ea-type].loaded.flat .ea-content{border:0px;border-radius:3px;box-shadow:none}[data-ea-type="image"].loaded,[data-ea-publisher]:not([data-ea-type]).loaded,.ea-type-image{display:inline-block}[data-ea-type="image"].loaded .ea-content,[data-ea-publisher]:not([data-ea-type]).loaded .ea-content,.ea-type-image .ea-content{max-width:180px;overflow:auto;text-align:center}[data-ea-type="image"].loaded .ea-content>a>img,[data-ea-publisher]:not([data-ea-type]).loaded .ea-content>a>img,.ea-type-image .ea-content>a>img{width:120px;height:90px;display:inline-block}[data-ea-type="image"].loaded .ea-content>.ea-text,[data-ea-publisher]:not([data-ea-type]).loaded .ea-content>.ea-text,.ea-type-image .ea-content>.ea-text{margin-top:1em;font-size:1em;text-align:center}[data-ea-type="image"].loaded .ea-callout,[data-ea-publisher]:not([data-ea-type]).loaded .ea-callout,.ea-type-image .ea-callout{max-width:180px;margin:0em 1em 1em 1em;padding-left:1em;padding-right:1em;font-style:italic;text-align:right}[data-ea-type="image"].loaded.horizontal .ea-content,[data-ea-publisher]:not([data-ea-type]).loaded.horizontal .ea-content,.ea-type-image.horizontal .ea-content{max-width:320px}[data-ea-type="image"].loaded.horizontal .ea-content>a>img,[data-ea-publisher]:not([data-ea-type]).loaded.horizontal .ea-content>a>img,.ea-type-image.horizontal .ea-content>a>img{float:left;margin-right:1em}[data-ea-type="image"].loaded.horizontal .ea-content .ea-text,[data-ea-publisher]:not([data-ea-type]).loaded.horizontal .ea-content .ea-text,.ea-type-image.horizontal .ea-content .ea-text{margin-top:0em;text-align:left;overflow:auto}[data-ea-type="image"].loaded.horizontal .ea-callout,[data-ea-publisher]:not([data-ea-type]).loaded.horizontal .ea-callout,.ea-type-image.horizontal .ea-callout{max-width:320px;text-align:right}[data-ea-type="text"].loaded,.ea-type-text{font-size:14px}[data-ea-type="text"].loaded .ea-content,.ea-type-text .ea-content{text-align:left}[data-ea-type="text"].loaded .ea-callout,.ea-type-text .ea-callout{margin:0.5em 1em 1em 1em;padding-left:1em;padding-right:1em;text-align:right;font-style:italic}[data-ea-style="stickybox"].loaded{position:fixed;bottom:20px;right:20px;z-index:10}[data-ea-style="stickybox"].loaded .ea-type-image .ea-stickybox-hide{cursor:pointer;position:absolute;top:0.75em;right:0.75em;background-color:#fefefe;border:1px solid #088cdb;border-radius:50%;color:#088cdb;font-size:1em;text-align:center;height:1.5em;width:1.5em;line-height:1.5em}@media (max-width: 1300px){[data-ea-style="stickybox"].loaded{position:static;bottom:0;right:0;margin:auto;text-align:center}[data-ea-style="stickybox"].loaded .ea-stickybox-hide{display:none}}@media (min-width: 1301px){[data-ea-style="stickybox"].loaded .ea-type-image .ea-content{background:#dcdcdc}[data-ea-style="stickybox"].loaded.dark .ea-type-image .ea-content{background:#505050}}@media (min-width: 1301px) and (prefers-color-scheme: dark){[data-ea-style="stickybox"].loaded.adaptive .ea-type-image .ea-content{background:#505050}}[data-ea-style="fixedfooter"].loaded{position:fixed;bottom:0;left:0;z-index:10;width:100%;max-width:100%}[data-ea-style="fixedfooter"].loaded .ea-type-text{width:100%;max-width:100%;display:flex;z-index:10;background:#dcdcdc}[data-ea-style="fixedfooter"].loaded .ea-type-text .ea-content{border:0px;border-radius:3px;box-shadow:none}[data-ea-style="fixedfooter"].loaded .ea-type-text .ea-content{background-color:inherit;max-width:100%;margin:0;padding:1em;flex:auto}[data-ea-style="fixedfooter"].loaded .ea-type-text .ea-callout{max-width:100%;margin:0;padding:1em;flex:initial}@media (max-width: 576px){[data-ea-style="fixedfooter"].loaded .ea-type-text .ea-callout{display:none}}[data-ea-style="fixedfooter"].loaded .ea-type-text .ea-fixedfooter-hide{cursor:pointer;color:#505050;padding:1em;flex:initial;margin:auto 0}[data-ea-style="fixedfooter"].loaded .ea-type-text .ea-fixedfooter-hide span{padding:0.25em;font-size:0.8em;font-weight:bold;border:0.15em solid #505050;border-radius:0.5em;white-space:nowrap}[data-ea-style="fixedfooter"].loaded.dark .ea-type-text{background:#505050}[data-ea-style="fixedfooter"].loaded.dark .ea-type-text .ea-fixedfooter-hide span{color:#dcdcdc;border-color:#dcdcdc}@media (prefers-color-scheme: dark){[data-ea-style="fixedfooter"].loaded.adaptive .ea-type-text{background:#505050}[data-ea-style="fixedfooter"].loaded.adaptive .ea-type-text .ea-fixedfooter-hide span{color:#dcdcdc;border-color:#dcdcdc}}
+</style><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/Untitled" type="text/javascript" async=""></script></head><body class="level-page"><div id="__next"><div class="header"><div class="header__left"><h1 class="logo" title="CSSBattle"><span class="visually-hidden">CSSBattle</span><a href="https://cssbattle.dev/"></a></h1><div class="Header_breadcrumbs__mCYlG"><h2 class="level"><a href="https://cssbattle.dev/battle/24">Battle #24</a></h2><button type="button" class="dropdown-container "><div class="dropdown-btn ">#144<span class="desktop-only">. Long Heart</span></div></button></div></div><div class="header__right"><a class="button button--cssbattle desktop-only" href="https://cssbattle.dev/learn">Learn CSS</a><div style="display: inline-block;" class="desktop-only"><button type="button" class="dropdown-container "><div class="dropdown-btn "><svg width="1.4rem" height="1.4rem" viewBox="0 0 24 24" fill="none" style="vertical-align: middle; margin-left: 0px;" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M15.07,11.25L14.17,12.17C13.45,12.89 13,13.5 13,15H11V14.5C11,13.39 11.45,12.39 12.17,11.67L13.41,10.41C13.78,10.05 14,9.55 14,9C14,7.89 13.1,7 12,7A2,2 0 0,0 10,9H8A4,4 0 0,1 12,5A4,4 0 0,1 16,9C16,9.88 15.64,10.67 15.07,11.25M13,19H11V17H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z"></path></svg><span class="">How to play</span></div></button></div><a href="https://cssbattle.dev/login" class="button"><div class="desktop-only">Sign In / Sign Up</div><span class="mobile-only">Login</span></a></div></div><div class="container container--fixed-height"><div class="container__item container__item--main container__item--editor"><div class="Editor_editor__32JYa"><div class="item__header  "><h3 class="header__title">editor</h3><p class="key-combo key-combo--header"> CTRL + SHIFT + E </p><div class="header__extra-info">708 characters</div></div><div class="BattleModeInfoPill_battleMode___alHa"><div style="display: flex; gap: 1rem; align-items: center; justify-content: flex-start; flex-direction: row;"><p class="BattleModeInfoPill_gameModeLabel__m7soO">⛳ Code Golf</p><p>Shortest code with a 100% match gets the highest score</p></div></div><div class="cm-theme"><div class="cm-editor cm-focused ͼ1 ͼ3 ͼ4 ͼ97 ͼ1d"><div style="position: absolute; top: -10000px;" aria-live="polite"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 683.95px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">99</div><div class="cm-gutterElement" style="height: 20.4833px; margin-top: 4px;">1</div><div class="cm-gutterElement" style="height: 20.4833px;">2</div><div class="cm-gutterElement" style="height: 20.4833px;">3</div><div class="cm-gutterElement" style="height: 20.4833px;">4</div><div class="cm-gutterElement" style="height: 20.4833px;">5</div><div class="cm-gutterElement" style="height: 20.4833px;">6</div><div class="cm-gutterElement" style="height: 20.4833px;">7</div><div class="cm-gutterElement" style="height: 20.4833px;">8</div><div class="cm-gutterElement" style="height: 20.4833px;">9</div><div class="cm-gutterElement" style="height: 20.4833px;">10</div><div class="cm-gutterElement" style="height: 20.4833px;">11</div><div class="cm-gutterElement" style="height: 20.4833px;">12</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 20.4833px;">13</div><div class="cm-gutterElement" style="height: 20.4833px;">14</div><div class="cm-gutterElement" style="height: 20.4833px;">15</div><div class="cm-gutterElement" style="height: 20.4833px;">16</div><div class="cm-gutterElement" style="height: 20.4833px;">17</div><div class="cm-gutterElement" style="height: 20.4833px;">18</div><div class="cm-gutterElement" style="height: 20.4833px;">19</div><div class="cm-gutterElement" style="height: 20.4833px;">20</div><div class="cm-gutterElement" style="height: 61.45px;">21</div><div class="cm-gutterElement" style="height: 20.4833px;">22</div><div class="cm-gutterElement" style="height: 20.4833px;">23</div><div class="cm-gutterElement" style="height: 102.417px;">24</div><div class="cm-gutterElement" style="height: 20.4833px;">25</div><div class="cm-gutterElement" style="height: 40.9667px;">26</div></div><div class="cm-gutter cm-foldGutter"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;"><span title="Unfold line">›</span></div><div class="cm-gutterElement" style="height: 20.4833px; margin-top: 44.9667px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 20.4833px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 20.4833px; margin-top: 40.9667px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement cm-activeLineGutter" style="height: 20.4833px; margin-top: 102.417px;"></div><div class="cm-gutterElement" style="height: 20.4833px; margin-top: 20.4833px;"><span title="Fold line">⌄</span></div></div></div><div style="tab-size: 4;" spellcheck="false" autocorrect="off" autocapitalize="none" translate="no" class="cm-content cm-lineWrapping" role="textbox" aria-multiline="true" aria-autocomplete="list" contenteditable="true"><div class="cm-line"><span class="ͼ1e">&lt;</span><span class="ͼ1g">div</span> <span class="ͼ1f">class</span><span class="ͼ1i">=</span><span class="ͼ1j">"vertical"</span><span class="ͼ1e">&gt;</span><span class="ͼ1e">&lt;/</span><span class="ͼ1g">div</span><span class="ͼ1e">&gt;</span></div><div class="cm-line"><span class="ͼ1e">&lt;</span><span class="ͼ1g">div</span> <span class="ͼ1f">class</span><span class="ͼ1i">=</span><span class="ͼ1j">"horizontal"</span><span class="ͼ1e">&gt;</span><span class="ͼ1e">&lt;/</span><span class="ͼ1g">div</span><span class="ͼ1e">&gt;</span></div><div class="cm-line"><span class="ͼ1e">&lt;</span><span class="ͼ1g">style</span><span class="ͼ1e">&gt;</span></div><div class="cm-line">  <span class="ͼ1g">body</span><span class="ͼ1e">{</span></div><div class="cm-line">    <span class="ͼ1k">background</span><span class="ͼ1l">:</span> #62306d</div><div class="cm-line">  <span class="ͼ1e">}</span></div><div class="cm-line">  <span class="ͼ1g">div</span> <span class="ͼ1e">{</span></div><div class="cm-line">    <span class="ͼ1k">width</span><span class="ͼ1l">:</span> <span class="ͼ1f">100</span><span class="ͼ1l">px</span><span class="ͼ1l">;</span></div><div class="cm-line">    <span class="ͼ1k">height</span><span class="ͼ1l">:</span> <span class="ͼ1f">100</span><span class="ͼ1l">px</span><span class="ͼ1l">;</span></div><div class="cm-line">    <span class="ͼ1k">background</span><span class="ͼ1l">:</span> #F7EC7D<span class="ͼ1l">;</span></div><div class="cm-line">    <span class="ͼ1k">border</span><span class="ͼ1l">:</span> <span class="ͼ1f">50</span><span class="ͼ1l">px</span> <span class="ͼ1f">50</span><span class="ͼ1l">px</span> <span class="ͼ1f">0</span> <span class="ͼ1f">0</span><span class="ͼ1l">;</span></div><div class="cm-line">          <span class="ͼ1k">position</span><span class="ͼ1l">:</span> <span class="ͼ1f">absolute</span><span class="ͼ1l">;</span></div><div class="cm-activeLine cm-line">    </div><div class="cm-line">  <span class="ͼ1e">}</span></div><div class="cm-line">  .<span class="ͼ1g">vertical</span><span class="ͼ1e">{</span></div><div class="cm-line">    </div><div class="cm-line">  <span class="ͼ1e">}</span></div><div class="cm-line"><span class="ͼ1e">&lt;/</span><span class="ͼ1g">style</span><span class="ͼ1e">&gt;</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼ1e">&lt;!-- OBJECTIVE --&gt;</span></div><div class="cm-line"><span class="ͼ1e">&lt;!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is --&gt;</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼ1e">&lt;!-- SCORING --&gt;</span></div><div class="cm-line"><span class="ͼ1e">&lt;!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. --&gt;</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼ1e">&lt;!-- IMPORTANT: remove the comments before submitting --&gt;</span></div></div><div class="cm-selectionLayer" aria-hidden="true"></div><div class="cm-cursorLayer" aria-hidden="true" style="animation-duration: 1200ms; animation-name: cm-blink;"><div class="cm-cursor cm-cursor-primary" style="left: 67.8px; top: 251.033px; height: 18px;"></div></div></div></div></div><div class="editor-console  editor-console--success">No errors found</div></div> <div class="btn-group    "><button type="button" class="button button--primary 
+      
+      
+        hint--top-left" data-hint="Don't be afraid. You can submit multiple times">Submit (Ctrl+ENTER)<div style="display: flex; transition: max-width 0.3s ease 0s; overflow: hidden; max-width: 0px;"><svg viewBox="0 0 166 166" height="1.3em" style="margin: 0px 0px 0px 0.5rem;" class="loader"><g fill="none" fill-rule="evenodd"><path d="M83 166c-45.84 0-83-37.16-83-83S37.16 0 83 0s83 37.16 83 83-37.16 83-83 83zm0-29c29.823 0 54-24.177 54-54s-24.177-54-54-54-54 24.177-54 54 24.177 54 54 54z" fill="currentColor" style="opacity: 0.2;"></path><path d="M137.008 83H137c0-29.823-24.177-54-54-54S29 53.177 29 83h-.008c.005.166.008.333.008.5C29 91.508 22.508 98 14.5 98S0 91.508 0 83.5c0-.167.003-.334.008-.5H0C0 37.16 37.16 0 83 0s83 37.16 83 83h-.008c.005.166.008.333.008.5 0 8.008-6.492 14.5-14.5 14.5S137 91.508 137 83.5c0-.167.003-.334.008-.5z" fill="currentColor"></path><animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 83 83" to="360 83 83" repeatCount="indefinite"></animateTransform></g></svg></div></button></div></div><div class="container__item container__item--scrollable container__item--output"><div class="item__header  "><h3 class="header__title">output</h3><div class="header__extra-info"><div style="display:flex;gap:1rem;align-items:center;justify-content:flex-end;flex-direction:row"><label><input type="checkbox" checked="checked" value="true"> <!-- -->Slide &amp; Compare</label><label><input type="checkbox" value="true" checked="checked"> <!-- -->Diff</label></div></div></div><div class="item__content"><div><div class="target-container" style="position: relative; cursor: col-resize;"><div style="overflow: hidden; width: 100%; height: 100%; position: relative; z-index: 1; mix-blend-mode: difference; pointer-events: none;"><iframe sandbox="allow-same-origin" title="Preview" style="background: white; width: 400px; height: 300px; border: 0px none; outline: 0px;"></iframe></div><img style="position: absolute; top: 0px; left: 0px; width: clamp(0px, 400px, 100%);" alt="" src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/144.png" srcset="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/144@2x.png 2x"></div></div><div class="inner-header"><h4 class="header__title header__title--inner">Your Score</h4></div><div class="score-container"><div><p class="score-container__score-type">Last Score</p><div class="score-container__spacer"></div><p class="score-container__score">Submit to get score</p></div><div><div style="display:flex;gap:0.5rem;align-items:center;justify-content:flex-start;flex-direction:row"><p class="score-container__score-type">High Score</p></div><div class="score-container__spacer"></div><p class="score-container__score">-</p></div><div class="score-container__buttons"><button type="button" class="button  
+      
+      
+        "><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="vertical-align: middle; margin-right: 0.5rem; margin-left: 0px;" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 12h-3c-.828427 0-1.5.6716-1.5 1.5v6c0 .8284.671573 1.5 1.5 1.5h3c.82843 0 1.5-.6716 1.5-1.5v-6c0-.8284-.67157-1.5-1.5-1.5Zm9-9h-3C9.67157 3 9 3.67157 9 4.5v15c0 .8284.67157 1.5 1.5 1.5h3c.8284 0 1.5-.6716 1.5-1.5v-15c0-.82843-.6716-1.5-1.5-1.5Zm9 4.5h-3c-.8284 0-1.5.67157-1.5 1.5v10.5c0 .8284.6716 1.5 1.5 1.5h3c.8284 0 1.5-.6716 1.5-1.5V9c0-.82843-.6716-1.5-1.5-1.5Z" fill="#fff"></path></svg>Leaderboard<div style="display: flex; transition: max-width 0.3s ease 0s; overflow: hidden; max-width: 0px;"><svg viewBox="0 0 166 166" height="1.3em" style="margin: 0px 0px 0px 0.5rem;" class="loader"><g fill="none" fill-rule="evenodd"><path d="M83 166c-45.84 0-83-37.16-83-83S37.16 0 83 0s83 37.16 83 83-37.16 83-83 83zm0-29c29.823 0 54-24.177 54-54s-24.177-54-54-54-54 24.177-54 54 24.177 54 54 54z" fill="currentColor" style="opacity: 0.2;"></path><path d="M137.008 83H137c0-29.823-24.177-54-54-54S29 53.177 29 83h-.008c.005.166.008.333.008.5C29 91.508 22.508 98 14.5 98S0 91.508 0 83.5c0-.167.003-.334.008-.5H0C0 37.16 37.16 0 83 0s83 37.16 83 83h-.008c.005.166.008.333.008.5 0 8.008-6.492 14.5-14.5 14.5S137 91.508 137 83.5c0-.167.003-.334.008-.5z" fill="currentColor"></path><animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 83 83" to="360 83 83" repeatCount="indefinite"></animateTransform></g></svg></div></button></div></div></div></div><div class="container__item container__item--scrollable container__item--target"><div class="item__header  "><h3 class="header__title">Target</h3><div class="header__extra-info">400px x 300px</div></div><div class="item__content"><img alt="" class="levelpage__target" src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/144.png" srcset="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/144@2x.png 2x" width="400"><div class="inner-header"><h4 class="header__title header__title--inner">Colors To Use</h4><p class="key-combo key-combo--inner-header">CTRL + Shift + C</p></div><ul class="colors-list"><li><button type="button" aria-label="Copy color #62306D" class="js-target-color colors-list__color" style="--color: #62306D;">#62306D</button></li><li><button type="button" aria-label="Copy color #F7EC7D" class="js-target-color colors-list__color" style="--color: #F7EC7D;">#F7EC7D</button></li></ul><div class="inner-header"><h4 class="header__title header__title--inner">Target Sponsor</h4></div><div class="sponsor-container"><div data-ea-publisher="cssbattle-dev" class="horizontal flat dark" data-ea-type="image"></div><script async="" src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/ethicalads.min.js"></script><div class="no-sponsor"><a href="https://cssbattle.dev/api/adRedirect?url=https%3A%2F%2Fbytes.dev%2F%3Fr%3Dcssbattle&amp;sponsorId=95" target="_blank" rel="noopener"><img src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/uidev-banner.jpeg" style="max-width: 100%;"></a></div></div></div></div></div><div class="footer"><p>© <!-- -->2023<!-- --> CSSBattle</p><div class="footer__links"><div style="display:inline-block"><a style="display:inline-flex;align-items:center" href="https://cssbattle.dev/pro"><span>Upgrade to</span> <img class="pro-badge" style="margin-left:0.5rem" src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/pro-badge.svg" alt="Pro badge" height="18"></a><span aria-hidden="true" style="margin:0 0.8em">·</span></div><a href="https://cssbattle.dev/tips">Tips &amp; Tricks</a><span aria-hidden="true" style="margin:0 0.8em">·</span><a href="https://cssbattle.dev/learn">Learn CSS</a><span aria-hidden="true" style="margin:0 0.8em">·</span><a href="https://cssbattle.dev/blog/">Blog</a><span aria-hidden="true" style="margin:0 0.8em">·</span><a href="https://cssbattle.dev/faqs">FAQs</a><span aria-hidden="true" style="margin:0 0.8em">·</span><a href="https://community.cssbattle.dev/" target="_blank" rel="external noopener noreferrer">Community</a><span aria-hidden="true" style="margin:0 0.8em">·</span><a href="https://cssbattle.dev/about">About</a><span aria-hidden="true" style="margin:0 0.8em">·</span><a href="https://cssbattle.dev/become-a-sponsor">Sponsor</a><span aria-hidden="true" style="margin:0 0.8em">·</span><a href="https://cssbattle.dev/privacy-and-terms">Privacy &amp; Terms</a><span aria-hidden="true" style="margin:0 0.8em">·</span><a href="https://discord.gg/rvqvbcFM86" target="_blank" rel="external noopener noreferrer" class="hint--top-left" aria-label="Join on Discord"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;margin-right:0.5rem;margin-left:0" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M22,24L16.75,19L17.38,21H4.5A2.5,2.5 0 0,1 2,18.5V3.5A2.5,2.5 0 0,1 4.5,1H19.5A2.5,2.5 0 0,1 22,3.5V24M12,6.8C9.32,6.8 7.44,7.95 7.44,7.95C8.47,7.03 10.27,6.5 10.27,6.5L10.1,6.33C8.41,6.36 6.88,7.53 6.88,7.53C5.16,11.12 5.27,14.22 5.27,14.22C6.67,16.03 8.75,15.9 8.75,15.9L9.46,15C8.21,14.73 7.42,13.62 7.42,13.62C7.42,13.62 9.3,14.9 12,14.9C14.7,14.9 16.58,13.62 16.58,13.62C16.58,13.62 15.79,14.73 14.54,15L15.25,15.9C15.25,15.9 17.33,16.03 18.73,14.22C18.73,14.22 18.84,11.12 17.12,7.53C17.12,7.53 15.59,6.36 13.9,6.33L13.73,6.5C13.73,6.5 15.53,7.03 16.56,7.95C16.56,7.95 14.68,6.8 12,6.8M9.93,10.59C10.58,10.59 11.11,11.16 11.1,11.86C11.1,12.55 10.58,13.13 9.93,13.13C9.29,13.13 8.77,12.55 8.77,11.86C8.77,11.16 9.28,10.59 9.93,10.59M14.1,10.59C14.75,10.59 15.27,11.16 15.27,11.86C15.27,12.55 14.75,13.13 14.1,13.13C13.46,13.13 12.94,12.55 12.94,11.86C12.94,11.16 13.45,10.59 14.1,10.59Z"></path></svg></a><span aria-hidden="true" style="margin:0 0.8em">·</span><a href="https://twitter.com/css_battle" target="_blank" rel="external noopener noreferrer" class="hint--top-left" aria-label="Join on Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;margin-right:0.5rem;margin-left:0" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"></path></svg></a><span aria-hidden="true" style="margin:0 0.8em">·</span><a href="mailto:contact@cssbattle.dev" target="_blank" rel="external noopener noreferrer" class="hint--top-left" aria-label="Contact us"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;margin-right:0.5rem;margin-left:0" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"></path></svg></a></div></div><div class="sidebar-container "><div class="underlay"></div><div class="sidebar sidebar--left"><button class="sidebar__close"></button><div class="sidebar__content"></div></div></div><div class="sidebar-container "><div class="underlay"></div><div class="sidebar sidebar--right"><button class="sidebar__close"></button><div class="sidebar__content"></div></div></div><div class="sidebar-container "><div class="underlay"></div><div class="sidebar sidebar--left"><button class="sidebar__close"></button><div class="sidebar__content"><div><div class="item__header  "><h3 class="header__title">Last Submissions</h3><div class="header__extra-info">0 submissions</div></div><div class="item__content"><div class="submissions-container"><p class="section-helper">You don't have any submissions.</p><ul class="submissions-list"></ul></div></div></div></div></div></div><div class="sidebar-container "><div class="underlay"></div><div class="sidebar sidebar--left"><button class="sidebar__close"></button><div class="sidebar__content"></div></div></div><div class="Toastify"><div class="Toastify__toast-container Toastify__toast-container--bottom-right" style="pointer-events: none;"></div></div><div id="portal-root"></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"levelIdParam":"144"},"__N_SSP":true},"page":"/play/[levelId]","query":{"levelId":"144"},"buildId":"-ODIhu4gLGI0_yWyn9UiZ","assetPrefix":"/nextjs","isFallback":false,"gssp":true,"scriptLoader":[]}</script><div id="forest-ext-shadow-host"></div><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/js" async=""></script><next-route-announcer><p aria-live="assertive" id="__next-route-announcer__" role="alert" style="border: 0px none; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; overflow-wrap: normal;"></p></next-route-announcer><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/index-66fe8d9e1599baa3.js"></script><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/learn-4df251d0e4f11d49.js"></script><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/pro-ac0ca5ef3ab0e511.js"></script><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/[battleId]-10472d9a9e993777.js"></script><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/tips-83effec308d19c5f.js"></script><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/faqs-dd12da0e04a7f1ea.js"></script><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/about-53eec2278281108a.js"></script><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/become-a-sponsor-cc632d4d9f58f223.js"></script><script src="Target%20%23144%20(Long%20Heart)%20-%20CSSBattle_files/privacy-and-terms-e37eb2ef3ffa42fb.js"></script></body></html>
