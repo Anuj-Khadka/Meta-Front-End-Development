@@ -1,8 +1,9 @@
-.header{
+.header-section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .nav-items{
