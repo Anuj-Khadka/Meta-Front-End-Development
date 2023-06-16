@@ -5,7 +5,7 @@ import "../assets/css/Header.css"
 
 const Header = () => {
   return (
-    <header className='header'>
+    <header className='header-section section'>
         <div className='brand-img-container'>
             <img className="brand-logo" src={logo} alt="little_lemon" />
         </div>
