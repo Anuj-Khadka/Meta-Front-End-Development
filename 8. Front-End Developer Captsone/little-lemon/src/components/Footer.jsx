@@ -5,7 +5,7 @@ import "../App.css";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="footer-section section">
       <div className="brand-img-container">
         <img className="brand-logo" src={logo} alt="little_lemon" />
       </div>
