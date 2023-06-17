@@ -42,7 +42,7 @@ ul > li {
 
 .lemon-btn:hover {
   background: transparent;
-  color: #f4ce14
+  color: #f4ce14;
 }
 
 /* hero section  */
@@ -144,7 +144,7 @@ ul > li {
 }
 
 .highlights-section .highlights-cards .highlights-card {
-  width: 275px;
+  flex: 1 1 275px;
   overflow: hidden;
   border-radius: 1rem;
   background: #edefee;
@@ -191,6 +191,81 @@ ul > li {
 
 .highlights-cards .highlights-card .card-body .card-tert {
   font-weight: bold;
+}
+
+/* testimonials section  */
+.testimonials-section {
+  background: #d9d9d9;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials-title {
+  font-family: "Markazi Text", serif;
+  font-weight: 500;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.testimonials-cards {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.rating-card {
+  background: #fff;
+  padding: 1rem;
+  flex: 1 0 250px;
+}
+
+.testimonials-cards .rating-star-box {
+  display: inline-block;
+  max-height: 18px;
+  max-width: 18px;
+  overflow: hidden;
+}
+.testimonials-cards .rating-star-box img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.rating-card .rater-info {
+  margin-top: 0.3rem;
+}
+
+.rating-card .rater-info .rater-img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.rating-card .rater-info .rater-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.rating-card .rater-info .rater-name {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+
+.rating-card .rating-desc {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 /* footer  */
