@@ -8,7 +8,7 @@ const Highlights = () => {
     <section className="highlights-section section">
       <div className="highlights-wrapper">
         <div className="highlights-header">
-          <p className="highlights-title">THIS WEEKS SPECIAL!</p>
+          <h3 className="highlights-title">THIS WEEKS SPECIAL!</h3>
           <button className="highlights-btn lemon-btn">Order Online</button>
         </div>
         <div className="highlights-cards">
