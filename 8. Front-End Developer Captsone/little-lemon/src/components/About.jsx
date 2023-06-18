@@ -1,4 +1,6 @@
 import React from "react";
+import marioAndrianA from "../assets/imgs/Mario and Adrian A.jpg";
+import marioAndrianB from "../assets/imgs/Mario and Adrian b.jpg";
 
 const About = () => {
   return (
@@ -11,8 +13,16 @@ const About = () => {
           voluptatem quam error vitae soluta labore.
         </p>
       </div>
-      <div className="about-img-container"></div>
-      About
+      <div className="about-img-container">
+        <div className="imgs-gallery">
+          <div className="img-box">
+            <img src={marioAndrianA} alt="mario and andrian" />
+          </div>
+          <div className="img-box">
+            <img src={marioAndrianB} alt="mario and andrian" />
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
