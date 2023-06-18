@@ -262,27 +262,52 @@ ul > li {
 }
 
 .rating-card .rating-desc {
-  font-family: "Karla";
+  font-family: "Karla", "san serif";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
 }
 
-
 /* about section  */
-.about-section{
+.about-section {
   padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
 }
 
+.about-section .about-content .about-title {
+  font-size: 64px;
+  font-weight: 500;
+  font-family: "Markazi Text", "serif";
+  line-height: 1rem;
+}
 
+.about-section .about-content .about-subtitle {
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Markazi Text", "serif";
+  color: #333;
+}
 
+.about-section .about-content .about-desc {
+  font-family: "Karla", "san serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: justify;
+}
 
-
-
-
-
-
-
+.about-img-container .imgs-gallery .img-card {
+  max-width: 350px;
+}
+.about-img-container .imgs-gallery .img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* footer  */
 
@@ -321,3 +346,5 @@ footer > .brand-img-container img {
 .footer-links ul {
   color: #333;
 }
+
+/* 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 */
