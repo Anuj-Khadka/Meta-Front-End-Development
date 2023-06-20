@@ -15,10 +15,10 @@ const About = () => {
       </div>
       <div className="about-img-container">
         <div className="imgs-gallery">
-          <div className="img-box">
+          <div className="img-box" id="image-a">
             <img src={marioAndrianA} alt="mario and andrian" />
           </div>
-          <div className="img-box">
+          <div className="img-box" id="image-b">
             <img src={marioAndrianB} alt="mario and andrian" />
           </div>
         </div>
