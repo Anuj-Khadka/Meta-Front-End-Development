@@ -7,10 +7,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-/* 
-body{
-  padding: 0 100px;
-} */
+
+*::selection{
+  color: #4d6059;
+}
 
 a {
   text-decoration: none;

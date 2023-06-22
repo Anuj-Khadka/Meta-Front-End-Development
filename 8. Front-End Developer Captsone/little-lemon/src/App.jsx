@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./components/pages/home/About";
 import BookingPage from "./components/pages/booking/BookingPage";
+import BookingConfirmed from "./components/pages/booking/BookingConfirmed";
 import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
 import Highlights from "./components/pages/home/Highlights";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Testimonials />} />
         <Route path="/about" element={<About />} />
         <Route path="/reservations" element={<BookingPage />} />
+        <Route path="/confirmed" element={<BookingConfirmed /> } />
         <Route path="/*" element={<PageNotFound />} />
       </Routes>
 
