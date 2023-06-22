@@ -1,14 +1,12 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import About from './components/About'
-import BookingForm from './components/BookingForm'
-import BookingPage from './components/BookingPage'
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Highlights from './components/Highlights'
-import Testimonials from './components/Testimonials'
-import Home from './components/Home'
+import About from './components/pages/home/About'
+import BookingPage from './components/pages/booking/BookingPage'
+import Footer from './components/layout/Footer'
+import Header from './components/layout/Header'
+import Highlights from './components/pages/home/Highlights'
+import Testimonials from './components/pages/home/Testimonials'
+import Home from './components/pages/home/Home'
 
 function App() {
   return(
