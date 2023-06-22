@@ -35,6 +35,17 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
     submitForm(formData);
   };
 
+  const isDateValid = () => formData.date !== "";
+  const isTimeValid = () => formData.time !== "";
+  const isNumberOfGuestsValid = () => formData.numberOfGuests !== "";
+  const isOccasionValid = () => formData.occasion !== "";
+
+  const areAllFieldsValid = () =>
+    isDateValid() &&
+    isTimeValid() &&
+    isNumberOfGuestsValid() &&
+    isOccasionValid();
+
   const currentDate = new Date().toISOString().split("T")[0];
   const options = availableTimes.map((time) => (
     <option key={time}>{time}</option>
@@ -75,7 +86,8 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
             placeholder="123-456-7890"
             value={formData.contactNumber}
             onChange={handleFormChange}
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            // pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
           />
         </div>
         <div className="book-date booking-inputs">
@@ -86,7 +98,8 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
             value={formData.date}
             onChange={handleDateChange}
             required
-            min={currentDate}
+            name="date"
+            // min={currentDate}
           />
         </div>
         <div className="book-time booking-inputs">
@@ -109,6 +122,7 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
             min="1"
             max="10"
             id="guests"
+            name="noOfGuests"
             value={formData.noOfGuests}
             onChange={handleFormChange}
             required
@@ -128,7 +142,12 @@ const BookingForm = ({ availableTimes, dispatch, submitForm }) => {
           </select>
         </div>
         <div className="book-confirm">
-          <input type="submit" value="Make Your reservation" />
+          <input
+            type="submit"
+            value="Make Your Reservation"
+            aria-label="Make Reservation"
+            disabled={!areAllFieldsValid()}
+          />
         </div>
       </form>
     </div>
