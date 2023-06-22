@@ -18,3 +18,7 @@
 .nav-items > li > a{
     color: #333;
 }
+
+.nav-item.active{
+    color: #f4ce14;
+}
