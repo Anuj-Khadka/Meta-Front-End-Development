@@ -33,9 +33,6 @@
 }
 
 .booking-form input[type="submit"]:hover {
-  /* border: solid 1px #4d6059;
-  background: transparent;
-  color: #4d6059; */
   box-shadow: none;
 }
 
