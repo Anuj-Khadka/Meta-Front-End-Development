@@ -58,6 +58,43 @@
   transition: all 0.2s ease-in-out;
 }
 
+.book-confirm input:disabled {
+  background: transparent;
+  box-shadow: none;
+  color: #4d6059;
+}
+
 .book-occasion select {
   color: #4d6059;
+}
+
+/* booking confirmed  */
+.booking-confirmed {
+  height: 90dvh;
+  padding: 2rem 5rem;
+}
+
+.booking-confirmed .confirmed-title {
+  font-size: 2rem;
+  color: #f4ce14;
+}
+
+.booking-confirmed .return-res {
+  background: #f4ce14;
+  border-radius: 5px;
+  border: solid 1px #f4ce14;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1.5rem;
+  font-family: "Karla";
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #333333;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.booking-confirmed .return-res:hover {
+  opacity: 0.7;
 }
