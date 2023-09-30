@@ -49,3 +49,8 @@ _positional notation - use of positive of a number to denote progressive increas
 |8|1000||
 |9|1001||
 |10|1010||
+
+## Memory
+`Computer` ---> `Memory Blocks` --> `Instructions` and `Informations`
+
+`Memory Capacity` - no. of bytes the computer can hold.
