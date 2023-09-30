@@ -54,3 +54,13 @@ _positional notation - use of positive of a number to denote progressive increas
 `Computer` ---> `Memory Blocks` --> `Instructions` and `Informations`
 
 `Memory Capacity` - no. of bytes the computer can hold.
+`Transfer Rate` - speed in which the computer can transfer data to the cache.
+
+Memory:
+- Cache Memory: Expensive, Stores memory, effective and time saving
+  	`Computer` ------> `|Cache Zone 1|` `|Cache Zone 2|` `|Cache Zone 3|` `|Cache Zone 4|`
+  	---------------------importance decreasing------------------------------------>
+- Main Memory: stores only info computer is currently processing, may be volatile(loses memory with computer off) or non-volatile, ROM is most busy, RAM is programmable
+  	`RAM size ~ Transfer Rate`
+- Secondary Memory: External memory, slow and requires transfering of data to RAM.
+  
