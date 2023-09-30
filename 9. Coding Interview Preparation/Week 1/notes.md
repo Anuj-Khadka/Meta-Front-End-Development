@@ -36,6 +36,7 @@ _positional notation - use of positive of a number to denote progressive increas
 - 0 and 1
 - add 1 to the left to increase the number value
 
+|---|---|---|
 |0|0|start at 0|
 |1|1|then 1|
 |2|10|start back at 0, but add 1 to left|
