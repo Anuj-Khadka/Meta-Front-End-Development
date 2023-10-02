@@ -64,3 +64,9 @@ Memory:
   	`RAM size ~ Transfer Rate`
 - **Secondary Memory**: External memory, slow and requires transfering of data to RAM.
   
+
+## Time Complexity
+`Big O notation` 
+- determines an algorithm's effiency
+- gives and estimates how long a code will take to wun on different inputs.
+- O(1), O(log logn), O(log n), O(n), O(nlogn), O(2n), O(n^2)
