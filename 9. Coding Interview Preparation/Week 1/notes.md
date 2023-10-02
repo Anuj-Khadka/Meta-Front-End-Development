@@ -79,16 +79,17 @@ Memory:
 ### O(n) - linear time 
 -> search loop = no. of element in array, n computations
 ```python
- for i = 0 to 10:
- 		if arr[i] == target:
-   			print target
+for i = 0 to 10:
+	if arr[i] == target:
+		print target
 ```
 
 ### O(log n) - binary search 
 -> the computation halves on every run, if we were to guess number between 1 to 100.
 <br/>
-`50 - too high`, `25 - too high`, `12 - too high` ---- 
-----------------halves everything--------------------
+| 50 - too high` | `25 - too high` | `12 - too high`|
+|---|---|---|
+|----------------halves everything--------------------|
 
 ### O(n^2)
 ```python
