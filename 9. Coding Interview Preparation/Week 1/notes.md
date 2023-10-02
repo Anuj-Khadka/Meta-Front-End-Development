@@ -73,7 +73,8 @@ Memory:
 
 ### O(1) - constant time
 -> no matter what is entered, it takes only one computation. 
-	`print array[0]`
+	```python
+ print array[0]```
 ### O(n) - linear time 
 -> search loop = no. of element in array, n computations
 	```python
@@ -83,6 +84,7 @@ Memory:
 
 ### O(log n) - binary search 
 -> the computation halves on every run, if we were to guess number between 1 to 100.
+<br/>
 `50 - too high`, `25 - too high`, `12 - too high` ---- 
 ----------------halves everything--------------------
 
