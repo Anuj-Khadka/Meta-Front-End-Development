@@ -73,14 +73,16 @@ Memory:
 
 ### O(1) - constant time
 -> no matter what is entered, it takes only one computation. 
-	```python
- print array[0]```
+```python
+ print array[0]
+ ```
 ### O(n) - linear time 
 -> search loop = no. of element in array, n computations
-	```python
+```python
  for i = 0 to 10:
  		if arr[i] == target:
-   			print target ```
+   			print target
+```
 
 ### O(log n) - binary search 
 -> the computation halves on every run, if we were to guess number between 1 to 100.
