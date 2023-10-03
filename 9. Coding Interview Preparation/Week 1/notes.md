@@ -102,4 +102,14 @@ for i to len(outer_arr):
 
 **O(1) > O(log n) > O(n) > O(nlogn) > O(n^2) > O(n^3)**
 
+## Space Complexity
+> size of inputs is measured in bytes.
 
+*axuiliary space*: space required to hold all the data required for the solution. temporaty for computation.
+*input space*: space required to up[date to add data to function, algorithm, system that we are evaluationg.
+
+`Space Complexity = input + axuiliary`
+For example: 
+|array size(4*n)| 12 | 4 | total sum |
+|--|--|--|--|
+||no. of elements|array header|padding space|
