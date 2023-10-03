@@ -98,3 +98,8 @@ for i to len(outer_arr):
 		if array[i][j] == target:
 			print target
 ```
+
+
+**O(1) > O(log n) > O(n) > O(nlogn) > O(n^2) > O(n^3)**
+
+
