@@ -62,6 +62,7 @@ Memory:
   	`Computer` ------> `|Cache Zone 1|` `|Cache Zone 2|` `|Cache Zone 3|` `|Cache Zone 4|`
   <br/>
   	---------------------importance decreasing------------------------------------>
+  <br/>
 - **Main Memory**: stores only info computer is currently processing, may be volatile(loses memory with computer off) or non-volatile, ROM is most busy, RAM is programmable
   	`RAM size ~ Transfer Rate`
 - **Secondary Memory**: External memory, slow and requires transfering of data to RAM.
