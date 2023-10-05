@@ -109,6 +109,7 @@ for i to len(outer_arr):
 *input space*: space required to up[date to add data to function, algorithm, system that we are evaluationg.
 
 `Space Complexity = input + axuiliary`
+<br/>
 For example: 
 |array size(4*n)| 12 | 4 | total sum |
 |--|--|--|--|
