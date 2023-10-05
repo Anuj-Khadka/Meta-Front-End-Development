@@ -58,6 +58,7 @@ _positional notation - use of positive of a number to denote progressive increas
 
 Memory:
 - **Cache Memory**: Expensive, Stores memory, effective and time saving
+- <br/>
   	`Computer` ------> `|Cache Zone 1|` `|Cache Zone 2|` `|Cache Zone 3|` `|Cache Zone 4|`
   	---------------------importance decreasing------------------------------------>
 - **Main Memory**: stores only info computer is currently processing, may be volatile(loses memory with computer off) or non-volatile, ROM is most busy, RAM is programmable
