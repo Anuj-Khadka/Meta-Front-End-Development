@@ -11,7 +11,7 @@ Data structure is the model of object for efficiency and faster memory use.
   
                                 `Data Structure` 
   |----------------------------------------------------------------|
-`Linear DS`                                                  `Non-Linear DS`
+`Linear DS`          (how info is stored)                    `Non-Linear DS`
 |---------|                                             |---------------------------|
 `Static`  `Dyanamic`                                  `true`                    `false`
   |          |-----------|-------|
