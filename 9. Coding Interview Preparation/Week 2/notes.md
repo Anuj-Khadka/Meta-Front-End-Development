@@ -4,6 +4,14 @@ Data structure is the model of object for efficiency and faster memory use.
 - String
 - Bool
 - Int
+  |Integers | Sign-magnitude representation |
+  |---------|------------|
+  |2|0010|
+  |1|0001|
+  |0|0000|
+  |-0|1000|
+  |-1|1001|
+  |-2|1010|
 - Objects
 - Arrays
 
@@ -13,7 +21,12 @@ Data structure is the model of object for efficiency and faster memory use.
   |----------------------------------------------------------------|
 `Linear DS`          (how info is stored)                    `Non-Linear DS`
 |---------|                                             |---------------------------|
-`Static`  `Dyanamic`                                  `true`                    `false`
+`Static`  `Dyanamic`                                  `tree`                    `graphs`
   |          |-----------|-------|
 `Array`    `Queue`    `Stack`   `Linked List`
 ```
+
+**first class objects**: functionality available to variables as others. For example: array and list.
+
+**Memory leak**: unused memory should be deallocated.
+
