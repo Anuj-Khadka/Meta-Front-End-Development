@@ -35,3 +35,4 @@ Data structure is the model of object for efficiency and faster memory use.
 
 **Stack Memory**: it is used during the execution of the program and is deallocated with the end of program.
 
+**Heap Memory**: it is available even after program execution.
