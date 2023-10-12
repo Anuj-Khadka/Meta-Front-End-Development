@@ -51,13 +51,13 @@ FIFO/LILO
 - Trees: It is a complex data structure that gives the flexibility to search and add data in the collection. It provides relation between the data stored.<br/>
     Terminologies: Nodes, Parent, Root, Child, Siblings, Height, Size, Path, Leaf<br/>
     Some trees are _Binary trees, B-tree, B-plus tree_ <br/>
-    Features:
-      - Hierarchy
-      - efficient insert and delete
-      - non-linear data strucutre means more ways to transverse with data.
+    Features:<br/>
+      - Hierarchy   <br/>
+      - efficient insert and delete   <br/>
+      - non-linear data strucutre means more ways to transverse with data.   <br/>
     Searching: Depth-first, Breadth-first<br>
-    Implementations:
-      - each node should have a key to identify them.
-      - the child in the left should have a lower value than the parent node and the right one should have the higher value.
-      - a parent can carry maximum of two childrens.
+    Implementations:   <br/>
+      - each node should have a key to identify them.   <br/>
+      - the child in the left should have a lower value than the parent node and the right one should have the higher value.   <br/>
+      - a parent can carry maximum of two childrens.   <br/>
     
