@@ -30,6 +30,11 @@ Data structure is the model of object for efficiency and faster memory use.
 
 **Memory leak**: unused memory should be deallocated.
 
+## Collection Data Structure
+- Stack: It is a linear data structure where the collection of elements are stacked on top of each other.
+   For example: CTRL Z
+  Methods: push, pop, isFull, isEmpty, peek
+
 
 -----
 
