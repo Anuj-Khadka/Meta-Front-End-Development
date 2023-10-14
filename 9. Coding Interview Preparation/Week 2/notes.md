@@ -61,3 +61,16 @@ FIFO/LILO
       - the child in the left should have a lower value than the parent node and the right one should have the higher value.   <br/>
       - a parent can carry maximum of two childrens.   <br/>
     
+  - Hash table:
+      contains several buckets/slots to hold key value pairs. It requires a hashing function to determine the correct bucket to place the data into. prioritizes speed over space.
+      `hashing function`: an algorithm or formula applied to a key to generate a unique number.
+
+    `key`  ----------> `hashing function`  --------------> [index][fixed sized value]
+    example: file/folder compression, dictionary
+
+    |key| . | index, value|
+    |---|---|---|
+    |orange|hashing function|0, drinks|
+    |spinach|hashing function|1, ....|
+    |coke|hashing function |4, veggies|
+    |...|hashing function| 2, fruits|
