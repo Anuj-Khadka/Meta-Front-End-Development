@@ -74,3 +74,16 @@ FIFO/LILO
     |spinach|hashing function|1, ....|
     |coke|hashing function |4, veggies|
     |...|hashing function| 2, fruits|
+
+
+  - Heap
+    > specialized data structure that modules like a tree but behaves in a similar way to a queue.
+
+    ```bash
+    //min_heap
+              10            #lowest value
+            /    \
+        15         33
+     /    \      /   \
+    40    30    100    40
+    ```
