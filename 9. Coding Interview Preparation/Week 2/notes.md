@@ -77,7 +77,7 @@ FIFO/LILO
 
 
   - Heap
-    > specialized data structure that modules like a tree but behaves in a similar way to a queue.
+    > specialized data structure that modules like a tree but behaves in a similar way to a queue. store and search data efficiently.
 
     ```bash
     //min_heap
@@ -87,3 +87,16 @@ FIFO/LILO
      /    \      /   \
     40    30    100    40
     ```
+
+     ```bash
+    //max_heap
+              100            #highest value
+            /    \
+        40         50
+     /    \      /   \
+    10    15    50    40
+    ```
+
+     - Graph:
+   
+    
